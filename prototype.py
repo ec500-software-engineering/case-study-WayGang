@@ -19,8 +19,8 @@ model.add(Dense(10))
 model.add(Activation('softmax'))
 
 
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True) # 优化函数，设定学习率（lr）等参数
-model.compile(loss='categorical_crossentropy', optimizer=sgd, class_mode='categorical') # 使用交叉熵作为loss函数
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True) 
+model.compile(loss='categorical_crossentropy', optimizer=sgd, class_mode='categorical') 
 
 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
