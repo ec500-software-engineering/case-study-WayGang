@@ -18,16 +18,17 @@ Keras would be a good choice when we have these kinds of need:
 
 
 Technology and Platform used for development
+
 1.Coding languages: Python. 
 Keras is designed and aimed for its friendly using style. 
 Python is such a language that is very comfortable to write. 
 So I believe that python would be best choice no matter python is 
 not as fast as C++ when it comes to performance comparison.
 
-Build system & build tools environment needed: None.
+2.Build system & build tools environment needed: None.
 Keras is capable with any python IDE.
 
-Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
+3.Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
 
 
 -----------------------------------
