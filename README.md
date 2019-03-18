@@ -13,6 +13,10 @@ Keras would be a good choice when we have these kinds of need:
 
 3.Able to switch between CPU & GPU.
 
+
+-----------------------------------
+
+
 Technology and Platform used for development
 1.Coding languages: Python. 
 Keras is designed and aimed for its friendly using style. 
@@ -25,15 +29,27 @@ Keras is capable with any python IDE.
 
 3.Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
 
+
+-----------------------------------
+
+
 Testing
 Travis CI as their testing platform. 
 They have code coverage metrics for example:https://coveralls.io/github/phreeza/keras, 
 to ensure its meaningful.
 
+
+-----------------------------------
+
+
 Defects:
 1.
 
 2.
+
+
+-----------------------------------
+
 
 Demonstration:
 Please run prototype.py
