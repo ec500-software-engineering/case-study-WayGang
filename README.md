@@ -24,10 +24,10 @@ Python is such a language that is very comfortable to write.
 So I believe that python would be best choice no matter python is 
 not as fast as C++ when it comes to performance comparison.
 
-2.Build system & build tools environment needed: None.
+Build system & build tools environment needed: None.
 Keras is capable with any python IDE.
 
-3.Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
+Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
 
 
 -----------------------------------
@@ -43,10 +43,17 @@ to ensure its meaningful.
 
 
 Defects:
-1.
+Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
+Does the issue require an architecture change, or is it just adding a new function or?
+ make a patch / pull request for the project to fix problem / add feature
 
-2.
+1.Why keras apps using multi_gpu_model is slower than single gpu? #9204
+multi_gpu_model is from keras.utils and it wraps the application model to use multiple GPU to train. However, it seems that using multi_gpu_model makes the training heavier and slower.
+It seems that CPU-side data-preprocessing can be one of the reason that greatly slow down the multi-GPU training
+Besides, the current version of multi_gpu_model seems to benefit large NN-models only, such as Xception, since weights synchronization is not the bottleneck. When it is wrapped to simple model such as mnist_cnn and cifar_cnn, weights synchronization is pretty frequent and makes the whole time much slower.
 
+2.Removing layers with layers.pop() doesn't work? #2371
+A new batch method is needed. Like a method to pop layers off and manage all the links correctly.
 
 -----------------------------------
 
