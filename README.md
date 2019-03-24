@@ -24,6 +24,8 @@ Keras is designed and aimed for its friendly using style.
 Python is such a language that is very comfortable to write. 
 So I believe that python would be best choice no matter python is 
 not as fast as C++ when it comes to performance comparison.
+Actually C++ has better performance, because our computer process python file
+
 
 2.Build system & build tools environment needed: None.
 Keras is capable with any python IDE.
