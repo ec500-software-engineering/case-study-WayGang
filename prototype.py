@@ -1,48 +1,31 @@
 from keras.models import Sequential
-from keras.layers.core import Dense, Dropout, Activation
-from keras.optimizers import SGD
-from keras.datasets import mnist
-import numpy
+from keras.layers import LSTM, Dense
+import numpy as np
 
+data_dim = 16
+timesteps = 8
+num_classes = 10
+
+# expected input data shape: (batch_size, timesteps, data_dim)
 model = Sequential()
+model.add(LSTM(32, return_sequences=True,
+               input_shape=(timesteps, data_dim)))  # returns a sequence of vectors of dimension 32
+model.add(LSTM(32, return_sequences=True))  # returns a sequence of vectors of dimension 32
+model.add(LSTM(32))  # return a single vector of dimension 32
+model.add(Dense(10, activation='softmax'))
 
+model.compile(loss='categorical_crossentropy',
+              optimizer='rmsprop',
+              metrics=['accuracy'])
 
-model.add(Dense(500,input_shape=(784,)))
-model.add(Activation('tanh'))
-model.add(Dropout(0.5))
+# Generate dummy training data
+x_train = np.random.random((1000, timesteps, data_dim))
+y_train = np.random.random((1000, num_classes))
 
-model.add(Dense(500))
-model.add(Activation('tanh'))
-model.add(Dropout(0.5))
+# Generate dummy validation data
+x_val = np.random.random((100, timesteps, data_dim))
+y_val = np.random.random((100, num_classes))
 
-model.add(Dense(10))
-model.add(Activation('softmax'))
-
-
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True) 
-model.compile(loss='categorical_crossentropy', optimizer=sgd, class_mode='categorical') 
-
-
-(X_train, y_train), (X_test, y_test) = mnist.load_data()
-X_train = X_train.reshape(X_train.shape[0], X_train.shape[1] * X_train.shape[2])
-X_test = X_test.reshape(X_test.shape[0], X_test.shape[1] * X_test.shape[2])
-Y_train = (numpy.arange(10) == y_train[:, None]).astype(int)
-Y_test = (numpy.arange(10) == y_test[:, None]).astype(int)
-
-model.fit(X_train,Y_train,batch_size=200,epochs=50,shuffle=True,verbose=0,validation_split=0.3)
-model.evaluate(X_test, Y_test, batch_size=200, verbose=0)
-
-
-print("test set")
-scores = model.evaluate(X_test,Y_test,batch_size=200,verbose=0)
-print("")
-print("The test loss is %f" % scores)
-result = model.predict(X_test,batch_size=200,verbose=0)
-
-result_max = numpy.argmax(result, axis = 1)
-test_max = numpy.argmax(Y_test, axis = 1)
-
-result_bool = numpy.equal(result_max, test_max)
-true_num = numpy.sum(result_bool)
-print("")
-print("The accuracy of the model is %f" % (true_num/len(result_bool)))
+model.fit(x_train, y_train,
+          batch_size=64, epochs=5,
+          validation_data=(x_val, y_val))
