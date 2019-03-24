@@ -2,7 +2,7 @@
 case-study-WayGang created by GitHub Classroom
 
 Keras-case-study
-
+=====
 Keras is a high-level neural network API. It supports us to do quick-test, 
 which means we can have our ideas tested immediately.
 Keras would be a good choice when we have these kinds of need:
@@ -14,11 +14,9 @@ Keras would be a good choice when we have these kinds of need:
 3.Able to switch between CPU & GPU.
 
 
------------------------------------
-
 
 Technology and Platform used for development
-
+-----------------------------------
 1.Coding languages: Python. 
 Keras is designed and aimed for its friendly using style. 
 Python is such a language that is very comfortable to write. 
@@ -33,19 +31,20 @@ Keras is capable with any python IDE.
 3.Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
 
 
------------------------------------
-
 
 Testing
+
+-----------------------------------
 Travis CI as their testing platform. 
 They have code coverage metrics for example:https://coveralls.io/github/phreeza/keras, 
 to ensure its meaningful.
 
 
+
+
+
+Defects
 -----------------------------------
-
-
-Defects:
 Analyze two defects in the project--e.g. open GitHub issue, support request tickets or feature request for the project
 Does the issue require an architecture change, or is it just adding a new function or?
  make a patch / pull request for the project to fix problem / add feature
@@ -58,8 +57,9 @@ Besides, the current version of multi_gpu_model seems to benefit large NN-models
 2.Removing layers with layers.pop() doesn't work? #2371
 A new batch method is needed. Like a method to pop layers off and manage all the links correctly.
 
+
+
+
+Demonstration
 -----------------------------------
-
-
-Demonstration:
 Please run prototype.py
