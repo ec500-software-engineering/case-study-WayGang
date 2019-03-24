@@ -31,7 +31,7 @@ Thus, if Keras is developped recently, still, I think python would be the better
 Keras is capable with any python IDE.
 
 3.Frameworks / libraries used in the project: Numpy,CNTK,Tensorflow...
-
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/Install_Requirements_Keras.png)
 
 
 Testing
