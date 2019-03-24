@@ -33,7 +33,6 @@ Keras is capable with any python IDE.
 
 
 Testing
-
 -----------------------------------
 Travis CI as their testing platform. 
 They have code coverage metrics for example:https://coveralls.io/github/phreeza/keras, 
