@@ -61,13 +61,11 @@ A new batch method is needed. Like a method to pop layers off and manage all the
 
 Architecture
 ---------------------------------
-I am gonna use a simple sequential classfier by Long Short-Term Memory (LSTM) for demonstration.
-In this model, we stack 3 LSTM layers on top of each other, making the model capable of learning higher-level temporal representations.
-The graph architecture is below:
+
 
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/StackedLSTM.png)
 
 
 Demonstration
 -----------------------------------
-Please run prototype.py
+Please run demo.py
