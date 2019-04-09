@@ -7,10 +7,10 @@ Machine Learning, Neural Network...., this is what people think of it:
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/machine1.jpeg)
 
 
-![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/machine2.jpeg)
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/machine2.png)
 -----
 Actually, by keras, what we are doing is like:
-![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/mysight.jpeg)
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/mysight.png)
 
 Keras-case-study
 =====
