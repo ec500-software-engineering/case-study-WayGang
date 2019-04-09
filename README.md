@@ -85,8 +85,8 @@ A new batch method is needed. Like a method to pop layers off and manage all the
 Architecture
 ---------------------------------
 
-
-![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/StackedLSTM.png)
+The test result is:
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/testresult.png)
 
 
 Demonstration
