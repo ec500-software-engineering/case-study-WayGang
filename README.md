@@ -1,5 +1,7 @@
 # case-study-WayGang
 case-study-WayGang created by GitHub Classroom
+
+Let's start from a joke:
 -----
 Machine Learning, Neural Network...., this is what people think of it:
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/machine1.jpeg)
