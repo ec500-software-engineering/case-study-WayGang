@@ -89,7 +89,8 @@ I use the 5000 number images from mnist as dataset.
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/trainx.png)
 There are only 10 catagories, so y is (5000,10)
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/trainy.png)
-
+Y is like:
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/y.png)
 The test result is:
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/testresult.png)
 
