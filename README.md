@@ -84,6 +84,11 @@ A new batch method is needed. Like a method to pop layers off and manage all the
 
 Architecture
 ---------------------------------
+I use the 5000 number images from mnist as dataset.
+5000 images are 28*28 = 784 pixels.
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/trainx.png)
+There are only 10 catagories, so y is (5000,10)
+![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/trainy.png)
 
 The test result is:
 ![image](https://github.com/ec500-software-engineering/case-study-WayGang/blob/master/testresult.png)
